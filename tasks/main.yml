@@ -1,0 +1,10 @@
+---
+# sysctl_settings/tasks/main.yml
+
+- name: 'Configure sysctl settings'
+  sysctl:
+    name: "{{ item.name }}"
+    state: 'present'
+    value: "{{ item.value }}"
+    sysctl_file: "/etc/sysctl.d/{{ sysctl_file_name }}"
+  with_items: "{{ sysctl_parameters }}"
