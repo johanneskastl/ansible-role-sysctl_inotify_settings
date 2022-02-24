@@ -1,0 +1,4 @@
+---
+# sysctl_settings/defaults/main.yml
+
+sysctl_file_name: '50_ansible.conf'
