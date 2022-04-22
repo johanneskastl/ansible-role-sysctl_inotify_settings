@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'sysctl_settings'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Adjust sysctl settings'
   company: 'B1 Systems GmbH'
