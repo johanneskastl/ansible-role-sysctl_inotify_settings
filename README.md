@@ -25,12 +25,11 @@ Example Playbook
     - hosts: servers
       roles:
         - role: 'johanneskastl.sysctl_settings'
-          vars:
-            sysctl_parameters:
-              - name: 'fs.inotify.max_user_instances'
-                value: '512'
-            sysctl_file_name: '87_inotify.max_user_instances.conf'
-             
+          sysctl_parameters:
+            - name: 'fs.inotify.max_user_instances'
+              value: '512'
+          sysctl_file_name: '87_inotify.max_user_instances.conf'
+
 
 License
 -------
