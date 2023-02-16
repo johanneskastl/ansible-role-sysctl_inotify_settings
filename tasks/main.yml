@@ -2,7 +2,7 @@
 # sysctl_settings/tasks/main.yml
 
 - name: 'Configure sysctl settings'
-  sysctl:
+  ansible.posix.sysctl:
     name: "{{ item.name }}"
     state: 'present'
     value: "{{ item.value }}"
