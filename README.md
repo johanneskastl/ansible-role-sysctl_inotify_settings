@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-sysctl_settings/workflows/Ansible%20Lint/badge.svg)
+
 sysctl_settings
 =========
 
